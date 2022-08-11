@@ -1,0 +1,226 @@
+/* CSS Reset  */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 23px;
+}
+/* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+/* Navigation Bar: logo Style  */
+#lo{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 8px 20px;
+}
+
+/* Navigation Bar: List style  */
+
+#navbar ul{
+    display: flex;
+    
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 20px;
+    margin: 3px 15px;
+
+}
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+    padding: 3px 2px;
+    color: white;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    font-size: 21px;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 2px 2px;
+    background-color: white;
+
+}
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 200px;
+    height: 350px;
+    
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content: "";
+    background: url('../images/111746-12726577-food_shoot_tacos_jpg.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 507px;
+    width: 100%;
+    z-index: -2;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+    
+  
+}
+#home h1{
+    color: white;
+    text-align: center;
+    
+    
+}
+#home p{
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 3px;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+   
+/* Utility class */
+.h-primary{
+    font-size: 3rem;
+    padding: 15px;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+    margin-top: 60px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: rgba(255, 0, 0, 0.397);
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 1.2rem;
+    font-family: 'Balsamiq Sans', cursive;
+    cursor: pointer;
+}
+/* faltu for space  */
+#faltu{
+    visibility: hidden;
+    
+}
+/* Services section */
+.services-container{
+    font-family: 'Balsamiq Sans', cursive;
+
+}
+#services{
+    display: flex;
+    margin: 3px 50px;
+    justify-content: center;
+    text-align: center;
+    
+}
+#services .box{
+    border: 2px solid red;
+    padding: 12px;
+    margin: 20px;
+    border-radius: 23px;
+    background-color: rgb(255, 233, 233);
+}
+#services .box img{
+height: 100px;    
+
+}
+.box p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+#client-section::before{
+    content: "";
+    background: url("../images/mediterranean-cuisine-2378758.jpg");
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50%;
+    z-index: -2;
+    opacity: 0.4;
+    border-radius: 23px;
+
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 216px;
+}
+.client-item{
+    padding: 5px;
+    margin: 5px;
+  
+}
+.client-item1 img{
+    height: 110px;
+    border-radius: 15px;
+   margin: 10px 10px;
+}
+
+/* Contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url("../images/Restaurant-Safe-Food-Delivery.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+  border-radius: 23px;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#contact-box input,
+#contect-box textarea{
+    width: 100%;
+    padding: 10px 0rem;
+    text-align: center;
+    opacity: 0.7;
+    font-family: 'Balsamiq Sans', cursive;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    margin: 5px 2px;
+   
+    
+}
+#contact-box label{
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    
+}
